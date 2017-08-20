@@ -1,0 +1,54 @@
+{
+  "name": "boilerjs-men",
+  "version": "1.0.0",
+  "description": "basic mongoose-express-node template",
+  "debug": "true",
+  "main": "server.js",
+  "scripts": {
+    "db": "mongod --port 27017 --dbpath=./devData",
+    "start": "node server.js",
+    "dev": "SET NODE_ENV=development&& nodemon server.js",
+    "prod": "SET NODE_ENV=production&& node server.js",
+    "test": "SET NODE_ENV=test&& mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IMBurbank/boilerjs-men.git"
+  },
+  "keywords": [
+    "mangodb",
+    "express",
+    "node",
+    "template"
+  ],
+  "author": "IMBurbank",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IMBurbank/boilerjs-men/issues"
+  },
+  "homepage": "https://github.com/IMBurbank/boilerjs-men",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.17.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4",
+    "express-session": "^1.15.5",
+    "mongoose": "^4.11.7",
+    "morgan": "^1.8.2",
+    "passport": "^0.4.0",
+    "passport-github": "^1.1.0",
+    "passport-google-oauth20": "^1.0.0",
+    "passport-local": "^1.0.0",
+    "pug": "^2.0.0-rc.3"
+  },
+  "devDependencies": {
+    "mocha": "^3.5.0",
+    "chai": "^4.1.1",
+    "chai-as-promised": "^7.1.1"
+  },
+  "engines": {
+    "node": "8.1.x"
+  }
+}

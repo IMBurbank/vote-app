@@ -1,0 +1,41 @@
+extends _layout
+
+
+block header
+  header
+    p Profile
+    a.menu(href='/content') Content
+    p#menu-divide |
+    a.menu(href='/logout') Sign Out
+
+block main
+  main
+    .container
+      img(src='public/img/egg_150px.png')
+      br
+      p.title-text Egg-js
+
+    .container
+      .user-profile
+        p.title User Profile
+        if user.loginAuth === 'github'
+          img(src='/public/img/gh-mark-32px.png', alt='github logo')
+        else if user.loginAuth === 'google'
+          img(src='/public/img/google_logo_32px.png', alt='google logo')
+        else
+          img(src='/public/img/egg2_32px.png', alt='egg logo')
+        .user-details
+          p
+            span ID: 
+            span#profile-id.profile-value
+          p
+            span Display Name: 
+            span#display-name.profile-value
+        .nav-menu
+          a.menu(href='/content') Content
+          p#menu-divide |
+          a.menu(href='/logout') Sign Out
+
+block scripts
+  script(type='text/javascript', src='common/ajax-functions.js')
+  script(type='text/javascript', src='controllers/userController.client.js')

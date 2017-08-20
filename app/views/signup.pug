@@ -1,0 +1,56 @@
+extends _layout
+
+
+block header
+  header
+    p Sign Up
+    a.menu(href='/') Home
+    p#menu-divide |
+    a.menu(href='/login') Sign In
+
+block main
+  main
+    .container
+      img(src='/public/img/egg_150px.png')
+      br
+      p.title-text Egg-js
+
+    .container
+
+      .auth-error
+        if message
+          p #{message}
+
+      p
+        | Sign-Up using any of the following options:
+
+      form#signup-form.auth-form(action='/auth/local-signup', method='post')
+        p Create an Account
+        .input-container
+          span Email
+          input#email(name='email', type='text', placeholder='example@domain.com')
+        .input-container
+          span Display Name
+          input#name(name='name', type='text', placeholder='coolname52')
+        .input-container
+          span Password
+          input#password(name='password', type='password', placeholder='**********')
+        .input-container
+          span Re-Password
+          input#re-password(name='re-password', type='password', placeholder='**********')
+        button(type='submit') Submit
+
+      .btn-container
+        a(href='/auth/github')
+          #login-btn.btn
+            img(src='/public/img/github_32px.png', alt='github logo')
+            p LOGIN WITH GITHUB
+
+        a(href='/auth/google')
+          #login-btn.btn
+            img(src='/public/img/google_icon_32px.png', alt='google logo')
+            p LOGIN WITH GOOGLE
+
+block scripts
+  script(type='text/javascript', src='common/ajax-functions.js')
+  script(type='text/javascript', src='controllers/clickController.client.js')

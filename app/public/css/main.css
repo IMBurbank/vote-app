@@ -1,0 +1,256 @@
+/****** Main Styling ******/
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	color: #00BCD4;
+	height: 56px;
+	margin: 0 0 14px 0;
+	text-align: center;
+}
+
+p {
+	margin: 8px 0 0 0;
+}
+
+.container p {
+	text-align: center;
+	padding: 0;
+}
+
+/****** Header Styling ******/
+
+header p {
+	margin: 16px 0 5px 0;
+}
+
+.menu {
+	text-decoration: none;
+	padding: 6px;
+	margin: 0;
+	color: #727272;
+}
+
+.menu:visited {
+	color: #727272;
+}
+
+.menu:hover {
+	color: #FFA000;
+}
+
+.menu:active {
+	color: #FF630D;
+}
+
+header a ~ p {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	color: #ECEFF1;
+}
+
+#display-name {
+	font-weight: 400;
+}
+
+/****** Auth Styling ******/
+
+.auth-error {
+	margin: 16px auto 0;
+	height: 2em;
+	color: red;
+}
+
+.auth-form {
+	margin: 16px auto;
+	padding: 8px 16px;
+	max-width: 320px;
+	background: #96D8EB;
+	border-radius: 3px;
+}
+
+.auth-form p {
+  margin: 8px 0 16px;
+  text-align: center;
+}
+
+.auth-form .input-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.auth-form span {
+  font-size: .9rem;
+  font-weight: 300;
+}
+
+.auth-form input {
+  width: 200px;
+}
+
+.auth-form button {
+  margin: 8px 0;
+  padding: 6px 16px;
+  color: #FFF;
+  font-size: .9rem;
+  font-weight: bold;
+  background: #FFA000;
+  border: none;
+  border-radius: 3px;
+}
+
+.auth-form button:hover {
+  background: #FFCE15;
+}
+
+#login-btn {
+	width: 225px;
+	padding: 7px 5px;
+}
+
+.btn p {
+	margin: 8px 0 0 0;
+  padding: 0;
+}
+
+.btn > img {
+	float: left;
+	margin-left: 10px
+}
+
+/****** Logo Div Styling ******/
+
+img {
+	margin: 0 auto;
+	display: block;
+}
+
+.title-text {
+	padding: 0;
+	margin: -25px 0 0 0;
+	font-weight: 500;
+	font-size: 60px;
+	color: #FFA000;
+}
+
+/****** Click Styling ******/
+
+.btn-container {	/* Styling for the div that contains the buttons */
+	margin: 0 auto 0 auto;
+	text-align: center;
+}
+
+.btn {	/* Styling for buttons */
+	margin: 0 8px;
+	color: white;
+	background-color: #00BCD4;
+	display: inline-block;
+	border: 0;
+	font-size: 14px;
+	border-radius: 3px;
+	padding: 10px 5px;
+	width: 100px;
+	font-weight: 500;
+}
+
+.btn:focus {	/* Remove outline when hovering over button */
+	outline: none;
+}
+
+.btn:hover {
+	background-color: #37E2F9;
+}
+
+.btn:active {	/* Scale the button down by 10% when clicking on button */
+	transform: scale(0.9, 0.9);
+	-webkit-transform: scale(0.9, 0.9);
+	-moz-transform: scale(0.9, 0.9);
+}
+
+.btn-reset {	/* Styling for reset button */
+	background-color: #ECEFF1;
+	color: #212121;
+}
+
+.btn-reset:hover {
+	background-color: #FFEBEB;
+}
+
+#click-nbr {
+	font-weight: 400;
+}
+
+/****** Profile Styling ******/
+
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+	width: 350px;
+	height: 200px;
+  margin: 32px auto;
+  padding: 16px;
+	background-color: #96D8EB;
+	border-radius: 3px;
+	text-align: center;
+	color: #000;
+}
+
+.user-profile .title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.user-profile p:nth-child(5) {
+	margin-bottom: 16px
+}
+
+.user-profile p {
+	margin: 0 0 0 16px;
+	text-align: left;
+}
+
+.profile-value {
+	font-weight: 400;
+}
+
+span {
+	font-weight: 500;
+}
+
+.user-profile > img {
+	padding-top: 16px;
+	margin-bottom: 16px;
+}
+
+.user-profile .menu:hover {
+	color: #FFA000;
+}
+
+.user-profile .menu:active {
+	color: #FF630D;
+}
+
+#menu-divide {
+	color: #727272;
+	display: inline;
+	margin: 0;
+}
+
+/****** Footer Styling ******/
+
+footer {
+  margin-top: 16px;
+  text-align: center;
+}
+
+footer a {
+  color: #727272;
+}

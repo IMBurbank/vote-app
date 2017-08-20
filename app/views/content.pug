@@ -1,0 +1,28 @@
+extends _layout
+
+block header
+  header
+    p.
+      Welcome, #[span#display-name]!
+    a.menu(href='/profile') Profile
+    p#menu-divide |
+    a.menu(href='/logout') Sign Out
+
+block main
+  main
+    .container
+      img(src='public/img/egg_150px.png')
+      br
+      p.title-text Egg-js
+    .container
+      p.
+        You have clicked the button #[span#click-nbr] times.
+      br
+      .btn-container
+        button.btn.btn-add(type='submit') CLICK ME!
+        button.btn.btn-reset RESET
+
+block scripts
+  script(type='text/javascript', src='common/ajax-functions.js')
+  script(type='text/javascript', src='controllers/userController.client.js')
+  script(type='text/javascript', src='controllers/clickController.client.js')
